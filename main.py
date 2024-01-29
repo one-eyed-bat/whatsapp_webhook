@@ -11,7 +11,6 @@ load_dotenv()
 GRAPH_URL = os.getenv("GRAPH_URL") ##update version number as needed
 TOKEN = os.getenv("VERIFY_TOKEN")
 W_API_TOKEN = os.getenv("WHATSAPP_API_TOKEN")
-#MY_NUMBER_ID = os.getenv("WHATSAPP_NUMBER_ID")
 OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 W_BUSINESS_ID = os.getenv("WAHTSAPP_BUSINESS_ID") ##This is the whatsapp business number
 x = 0
