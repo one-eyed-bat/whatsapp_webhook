@@ -115,9 +115,6 @@ def send_message(texts, sender_number):
         else:
             exit()
 
-
-
-
 @app.route("/", methods=['GET'])
 #a function to verify the callback url used for the webhook
 def webhook_verification():
@@ -133,7 +130,6 @@ def webhook_verification():
 
 
 @app.route('/', methods=['GET','POST'])
-
 def webhook():
     result = recieve_message()
     if result:
