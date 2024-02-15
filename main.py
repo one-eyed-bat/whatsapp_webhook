@@ -17,7 +17,6 @@ x = 0
 
 app = Flask(__name__)
 
-
 def recieve_message():
     data = request.get_json()
     if data:
@@ -38,7 +37,6 @@ def recieve_message():
                         text = ["הקליטו או העבירו לי הודעה קולית בכל שפה, וקבלו טקסט 💫"]
                         send_message(text, sender_number)
                         exit()
-
 
 def download_media(recieve_url):
     header = {'Authorization': f'Bearer {W_API_TOKEN}'}
